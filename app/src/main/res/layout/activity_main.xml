@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/design_default_color_secondary"
+    android:padding="75dp">
+
+    <!-- Container for centered elements -->
+    <LinearLayout
+        android:id="@+id/centerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:background="@color/material_dynamic_primary70"
+        android:orientation="vertical">
+
+        <!-- Row with Red and Green buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/redButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#951605"
+                android:textSize="20dp"
+                android:text="Red" />
+
+            <Button
+                android:id="@+id/blueButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#027133"
+                android:text="Green"
+                android:textSize="20dp"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+        <!-- TextView to display color -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="224dp"
+            android:layout_height="88dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:paddingTop="0dp"
+            android:background="@drawable/roundshape"
+            android:paddingLeft="10dp"
+            android:text="Color"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <!-- Clear button -->
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:background="@color/black"
+            android:text="Clear" />
+
+
+
+        <!-- Change button -->
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:background="@color/black"
+            android:text="Next" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
